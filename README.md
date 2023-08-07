@@ -1,15 +1,5 @@
 Git Commands
 ============
-
-## Translated Versions
-- [Versão em português](READMEpt.md)
-- [Versión en español](READMEes.md)
-- [Türkçe versiyon](READMEtr.md)
-- [বাংলা সংস্করণ](READMEbn.md)
-- [हिन्दी अनुवाद](READMEhi.md)
-
-___
-
 _A list of my commonly used Git commands_
 
 *If you are interested in my Git aliases, have a look at my `.bash_profile`, found here: https://github.com/joshnh/bash_profile/blob/master/.bash_profile*
@@ -32,6 +22,7 @@ _A list of my commonly used Git commands_
 | `git add -A` | Add all new and changed files to the staging area |
 | `git commit -m "[commit message]"` | Commit changes |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) |
+| `git commit --amend --no-edit` | Amend last commit `--no-edit` tag doesn't modify the git message |
 
 ### Branching & Merging
 
@@ -51,6 +42,8 @@ _A list of my commonly used Git commands_
 | `git merge [branch name]` | Merge a branch into the active branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 | `git stash` | Stash changes in a dirty working directory |
+| `git stash list` | Check the stored stashes |
+| `git stash apply [stash id]` | Re-applies the stashed changes |
 | `git stash clear` | Remove all stashed entries |
 
 ### Sharing & Updating Projects
@@ -71,6 +64,7 @@ _A list of my commonly used Git commands_
 | Command | Description |
 | ------- | ----------- |
 | `git log` | View changes |
+| `git log -p` | Show the diff-formatted changes introduced at each commit |
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
