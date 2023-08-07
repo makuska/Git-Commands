@@ -43,7 +43,7 @@ _A list of my commonly used Git commands_
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
 | `git stash` | Stash changes in a dirty working directory |
 | `git stash list` | Check the stored stashes |
-| `git stash apply [stash id]` | Re-applies the stashed changes |
+| `git stash apply [stash@{<id>}]` | Re-applies the stashed changes. Change the `<id>` with the corresponding id value! |
 | `git stash clear` | Remove all stashed entries |
 
 ### Sharing & Updating Projects
@@ -68,3 +68,4 @@ _A list of my commonly used Git commands_
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+| `git diff --staged` | Will compare your staged changes against the previous commit |
